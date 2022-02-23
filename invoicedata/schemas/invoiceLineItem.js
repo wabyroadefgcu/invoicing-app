@@ -6,7 +6,7 @@ export default {
     {
       name: 'hours',
       title: 'Hours',
-      type: 'integer',
+      type: 'number',
     },
     {
       name: 'description',

@@ -4,7 +4,7 @@ import { InvoiceComponent } from './invoice/invoice.component';
 
 const routes: Routes = [
   { path: 'invoice', component: InvoiceComponent },
-//  { path: '',   redirectTo: '/invoice', pathMatch: 'full' },
+  { path: '',   redirectTo: '/invoice', pathMatch: 'full' },
 ];
 
 @NgModule({

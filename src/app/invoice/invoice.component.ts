@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NetlifyIdentityService } from '../netlify-identity.service';
 
 @Component({
   selector: 'app-invoice',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InvoiceComponent implements OnInit {
 
-  constructor() { }
+  constructor(public ns: NetlifyIdentityService) { }
 
   ngOnInit(): void {
   }

@@ -11,11 +11,11 @@ export class NetlifyIdentityService {
     constructor(router: Router) {
       netlifyIdentity.init();
       // Bind to events
-      netlifyIdentity.on('init', function(user) {
+      netlifyIdentity.on('init', function(user: any) {
         console.log('init', user)
       });
 
-      netlifyIdentity.on('login', function(user) {   
+      netlifyIdentity.on('login', function(user: any) {   
         console.log('current user', netlifyIdentity.currentUser());
         netlifyIdentity.close();
       });
@@ -26,7 +26,7 @@ export class NetlifyIdentityService {
         router.navigateByUrl('/');
       });
 
-      netlifyIdentity.on('error', function(err) {
+      netlifyIdentity.on('error', function(err: any) {
         console.error('Error', err)
       }); 
 
